@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: entertainment-tadka-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /?render_health_check=1
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: REQUEST_GROUP_ID
+        sync: false
+    autoDeploy: true
