@@ -1,0 +1,13 @@
+{
+    "name": "entertainment-tadka/telegram-bot",
+    "description": "Telegram Movie Bot for Render.com",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "files": ["index.php"]
+    }
+}
